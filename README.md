@@ -17,6 +17,9 @@ O projeto consiste em um sistema de catálogo de produtos, onde o objetivo do pr
 - Spring Boot
 - Maven
 
+## Testes automatizados
+- JUnit 5
+
 # Autor
 Marcus Vinícius de Godoy 
 
