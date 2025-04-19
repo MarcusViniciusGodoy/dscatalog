@@ -9,6 +9,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
+import com.devsuperior.dscatalog.exceptions.ResourceNotFoundException;
 import com.devsuperior.dscatalog.repositories.ProductRepository;
 
 @ExtendWith(SpringExtension.class)
@@ -32,6 +33,14 @@ public class ProductServiceTests {
 
         Mockito.when(repository.existsById(existingId)).thenReturn(true);
         Mockito.when(repository.existsById(nonExistingId)).thenReturn(false);
+    }
+
+    @Test
+    public void deleteShouldThrowResourceNotFoundExceptionWhenIdDoesNotFoundExist(){
+        
+        Assertions.assertThrows(ResourceNotFoundException.class, () -> {
+            service.delete(nonExistingId);
+        });
     }
 
     @Test
