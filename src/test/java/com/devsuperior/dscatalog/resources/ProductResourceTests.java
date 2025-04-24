@@ -144,6 +144,7 @@ public class ProductResourceTests {
         result.andExpect(jsonPath("$.name").exists());
         result.andExpect(jsonPath("$.description").exists());
     }
+    
 
     @Test
     public void deleteShouldReturnNoContentWhenIdExists() throws Exception{
