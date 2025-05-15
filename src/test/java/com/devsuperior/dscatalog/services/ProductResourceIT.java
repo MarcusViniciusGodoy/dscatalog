@@ -40,7 +40,7 @@ public class ProductResourceIT {
 	
 	private String username, password, bearerToken;
 	
-	/*@BeforeEach
+	@BeforeEach
 	void setUp() throws Exception {
 		existingId = 1L;
 		nonExistingId = 1000L;
@@ -50,7 +50,7 @@ public class ProductResourceIT {
 		password = "123456";
 		
 		bearerToken = tokenUtil.obtainAccessToken(mockMvc, username, password);
-	}*/
+	}
 	
 	@Test
 	public void findAllShouldReturnSortedPageWhenSortByName() throws Exception {
