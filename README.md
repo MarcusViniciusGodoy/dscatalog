@@ -5,8 +5,7 @@
 
 Projeto DSCatalog do curso Java Spring Expert, cursos organizado pela [DevSuperior](https://devsuperior.com "Site da DevSuperior").
 
-O projeto consiste em um sistema de catálogo de produtos, onde o objetivo do projeto é estruturar projeto completo com camadas, boas práticas, validação, segurança, tratamento de exceções, consultas ao banco de dados, testes automatizados, dentre outros recursos. 
-
+O projeto consiste no desenvolvimento de um sistema de catálogo de produtos, com o objetivo de estruturar uma aplicação completa, seguindo o modelo em camadas e adotando boas práticas de programação, incluindo validação de dados, segurança, tratamento de exceções, consultas eficientes ao banco de dados, testes automatizados, entre outros recursos.
 
 ## UML
 ![Catalog](https://github.com/MarcusViniciusGodoy/assets/blob/main/catalog.PNG)
