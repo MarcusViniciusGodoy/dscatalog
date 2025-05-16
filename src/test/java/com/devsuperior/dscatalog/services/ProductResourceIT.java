@@ -40,7 +40,7 @@ public class ProductResourceIT {
 	
 	private String username, password, bearerToken;
 	
-	@BeforeEach
+	/*@BeforeEach
 	void setUp() throws Exception {
 		existingId = 1L;
 		nonExistingId = 1000L;
@@ -51,7 +51,7 @@ public class ProductResourceIT {
 		
 		bearerToken = tokenUtil.obtainAccessToken(mockMvc, username, password);
 	}
-	
+	*/
 	@Test
 	public void findAllShouldReturnSortedPageWhenSortByName() throws Exception {
 		
@@ -66,7 +66,6 @@ public class ProductResourceIT {
 		result.andExpect(jsonPath("$.content[1].name").value("PC Gamer"));
 		result.andExpect(jsonPath("$.content[2].name").value("PC Gamer Alfa"));		
 	}
-	
 	
 	@Test
 	public void updateShouldReturnProductDTOWhenIdExists() throws Exception {
