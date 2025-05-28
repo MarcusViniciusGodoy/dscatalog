@@ -1,12 +1,4 @@
 # Desafio dscatalog
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/MarcusViniciusGodoy/dscatalog/blob/main/LICENSE)
-
-# Sobre o projeto
-
-Projeto DSCatalog do curso Java Spring Expert, cursos organizado pela [DevSuperior](https://devsuperior.com "Site da DevSuperior").
-
-O projeto consiste no desenvolvimento de um sistema de catálogo de produtos, com o objetivo de estruturar uma aplicação completa, seguindo o modelo em camadas e adotando boas práticas de programação, incluindo validação de dados, segurança, tratamento de exceções, consultas eficientes ao banco de dados, testes automatizados, entre outros recursos.
-
 ## UML
 ![Catalog](https://github.com/MarcusViniciusGodoy/assets/blob/main/catalog.PNG)
 
