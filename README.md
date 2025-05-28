@@ -1,5 +1,5 @@
 # Desafio dscatalog
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/MarcusViniciusGodoy/dscatalog/blob/main/LICENSE)
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/MarcusViniciusGodoy/dscatalog/blob/main/backend/LICENSE)
 
 # Sobre o projeto
 
