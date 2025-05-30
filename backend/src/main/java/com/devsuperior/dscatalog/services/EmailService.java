@@ -7,7 +7,6 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
-import com.devsuperior.dscatalog.dto.EmailDTO;
 import com.devsuperior.dscatalog.services.exceptions.EmailException;
 
 @Service
@@ -19,13 +18,13 @@ public class EmailService {
     @Autowired
     private JavaMailSender emailSender;
 
-    public void sendEmail(EmailDTO obj) {
+    public void sendEmail(String to, String subject, String body) {
         try{
             SimpleMailMessage message = new SimpleMailMessage();
             message.setFrom(emailFrom);
-            message.setTo(obj.getTo());
-            message.setSubject(obj.getSubject());
-            message.setText(obj.getBody());
+            message.setTo(to);
+            message.setSubject(subject);
+            message.setText(body);
             emailSender.send(message);
         } 
         catch (MailException e){
